@@ -1,7 +1,7 @@
 obj-m := tcp_nanqinlang-test.o
 
 all:
-	make -C /lib/modules/`uname -r`/build M=`pwd` modules CC=/usr/bin/gcc-7
+	make -C /lib/modules/`uname -r`/build M=`pwd` modules CC=/usr/bin/gcc
 
 clean:
 	make -C /lib/modules/`uname -r`/build M=`pwd` clean
